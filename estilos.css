@@ -1,19 +1,27 @@
 body{
-	background-color: #5CD4FF;
+	background-color: #80DEEA;
 }
-#general{
+#div_general{
 	width: 100%;
 	float: left;
 }
 #div_botones{
-	background-color: #FFFFFF;
+
+	width: 21%;
+	float: left;
+}
+
+#img1{
 	border-radius: 34px 34px 34px 34px;
 	-moz-border-radius: 34px 34px 34px 34px;
 	-webkit-border-radius: 34px 34px 34px 34px;
 	border: 0px solid #000000;
+}
 
-	width: 100%;
+#color{
+	width: 85%;
 	float: left;
+
 }
 
 table, th, td {
@@ -39,5 +47,5 @@ select{
 }
 
 div.city{
-
+padding: 10px 10px 15px 400px;
 }

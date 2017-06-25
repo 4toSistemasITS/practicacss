@@ -2,175 +2,138 @@
 <html>
 <head>
 	<title>Doctor</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<meta charset="UTF-8">
 	<meta name="description" content="web para consultas">
 	<meta name="author" content="Trujillo Jhoselyn and Kathya Neira">
-	<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
-	<link rel="stylesheet" type="text/css" href="estilow3school.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-	<div id="general">
-		<div id="div_botones">
-			<!--<div id="img1">
-				<center>
-					<img src="img/citaprevia.png" width="75" height="75"><br>
-					<label>Citas</label>
-				</center>
-			</div>
-			<br>
-			<div id="img2">
-				<center>
-					<img src="img/eventosproximos.png" width="75" height="75"><br>
-					<label>Resumen de citas</label>
-				</center>
-			</div>
-			<br>
-			<div id="img3">
-				<center>
-					<img src="img/resumen.jpg" width="75" height="75"><br>
-					<label>Eventos proximos</label>
-				</center>
-			</div> -->
-			<center>
-				<button class="w3-button w3-left" style="width:100%" onclick="activartab('tabla1')">Citas</button>
-				<br>
-				<button class="w3-button w3-center" class="w3-bar-item w3-button w3-teal" style="width:100%" onclick="activartab('tabla2')">Resumen de citas</button>
-				<br>
-				<button class="w3-button w3-right" style="width:100%" onclick="activartab('tabla3')" >Eventos proximos</button>
-			</center>
+	<div id="div_general">
+		<div id="div_logo">
+			<img align="right" src="img/medic.png">
 		</div>
+		<div id="div_botones">
+			<div id="img1" class="w3-sidebar w3-bar-block w3-light-grey" style="width:285px">
+				<center>
+					<button id="btn1" class="w3-button fa fa-user-md fa-2x" aria-hidden="true" class="w3-bar-item w3-button" onclick="activartab('tabla1')">  Citas</button>
+				</center>
+			</div>
+			<br>
+			<br>
+			<div id="img1" class="w3-sidebar w3-bar-block w3-light-grey" style="width:285px">
+				<center>
+					<button id="btn2" class=" w3-button fa fa-address-book fa-2x" aria-hidden="true" aria-hidden="true" class="w3-bar-item w3-button" onclick="activartab('tabla2')">  Resumen de citas</button>
+				</center>
+			</div>
+			<br>
+			<br>
+			<div id="img1" class="w3-sidebar w3-bar-block w3-light-grey" style="width:285px">
+				<center>
+					<button id="btn3" class="w3-button fa fa-calendar fa-2x" aria-hidden="true" class="w3-bar-item w3-button" onclick="activartab('tabla3')">  Eventos proximos</button>
+				</center>
+			</div>
+		</div>
+	</div>
 
-		<br>
-		<br>
-		<div id="color" style="=width: 82%" >
+	<div id="color">
 			<div id="tabla1" class="city" style="display:none">
 				<center>
 					<table style="width:75%" >
-					  <caption style="color:blue;" class="w3-center w3-animate-right">HORARIO DE CITAS</caption>
+					  <caption style="color:blue;">HORARIO DE CITAS</caption>
 					  <tr>
 					    <th style="color:green;">Nº Cita</th>
 					    <th style="color:green;">Especialidad</th>
 					    <th style="color:green;">Dia</th>
 					    <th style="color:green;">Fecha</th>
+					    <th style="color:green;">Hora</th>
 					  </tr>
 					  <tr>
 					    <td>67349</td>
 					    <td>Medicina General</td>
-					    <td><select name="cars">
-					        <option value="volvo">Seleccionar dia</option>
-					        <option value="saab">Lunes</option>
-					        <option value="fiat">Martes</option>
-					        <option value="audi">Miercoles</option>
-					        <option value="audi">Jueves</option>
-					        <option value="audi">Viernes</option>
-					        </select>
-					    </td>
-					    <td><input type="datetime-local" name="bdaytime"></td>
+					    <td>Martes</td>
+					    <td>01-julio-2017</td>
+					    <td>08:30</td>
 					  </tr>
 					  <tr>
 					    <td>98347</td>
 					    <td>Pediatria</td>
-					    <td><select name="cars">
-					        <option value="volvo">Seleccionar dia</option>
-					        <option value="saab">Lunes</option>
-					        <option value="fiat">Martes</option>
-					        <option value="audi">Miercoles</option>
-					        <option value="audi">Jueves</option>
-					        <option value="audi">Viernes</option>
-					        </select></td>
-					    <td><input type="datetime-local" name="bdaytime"></td>
+					    <td>Lunes</td>
+					    <td>28-junio-2017</td>
+					    <td>09:00</td>
 					    
 					  </tr>
 					  <tr>
 					    <td>92735</td>
 					    <td>Ginecologia</td>
-					    <td><select name="cars">
-					        <option value="volvo">Seleccionar dia</option>
-					        <option value="saab">Lunes</option>
-					        <option value="fiat">Martes</option>
-					        <option value="audi">Miercoles</option>
-					        <option value="audi">Jueves</option>
-					        <option value="audi">Viernes</option>
-					        </select></td>
-					    <td><input type="datetime-local" name="bdaytime"></td>
+					    <td> Miercoles</td>
+					    <td>04-julio-2017</td>
+					    <td>10:00</td>
 					    
 					  </tr>
 					</table>
-					<br>
-					<br>
-				</div>
+				</center>
+			</div>
+				<br>
+				<br>
 				<div id="tabla2" class="city" style="display:none">
-					<center>
-				  <table style="width:75%" >
-				  <caption style="color:orange;" class="w3-spin">LISTA DE CITAS </caption>
+				<center>
+				    <table style="width:75%" >
+				  <caption style="color:blue;">RESUMEN DE CITAS</caption>
 				  <tr>
-				    <th style="color:blue;">Nº Cita</th>
-				    <th style="color:blue;">Hora</th>
-				    <th style="color:blue;">Estado</th>
+				    <th >Nº Cita</th>
+				    <th >Especialidad</th>
+				    <th >Estado</th>
 				  </tr>
 				  <tr>
 				    <td>67349</td>
 				    <td>Medicina General</td>
-				    <td><select name="cars">
-				        <option value="volvo">Seleccionar estado</option>
-				        <option value="saab">Terminada</option>
-				        <option value="fiat">Pendiente</option>
-				        </select>
-				    </td>
+				    <td>Terminada</td>
 				  </tr>
 				  <tr>
 				    <td>98347</td>
 				    <td>Pediatria</td>
-				    <td><select name="cars">
-				        <option value="Seleccionar">Seleccionar estado</option>
-				        <option value="Terminada">Terminada</option>
-				        <option value="Pendiente">Pendiente</option>
-				        </select>
-				    </td>
+				    <td>Pendiente</td>
 				    
 				  </tr>
 				  <tr>
 				    <td>92735</td>
 				    <td>Ginecologia</td>
-				    <td><select name="cars">
-				        <option value="Seleccionar">Seleccionar estado</option>
-				        <option value="Terminada">Terminada</option>
-				        <option value="Pendiente">Pendiente</option>
-				        </select>
-				    </td>
+				    <td>Terminada</td>
 				  </tr>
 				  </table>
 				  </center>
 				  </div>
 				  <br>
 				  <br>
-				  <div id="tabla3" class="city">
+				  <div id="tabla3" class="city" style="display:none">
 				  <center>
 				  <table style="width:75%" >
-				    <caption style="color:blue;">EVENTOS</caption>
+				    <caption style="color:blue;">EVENTOS PROXIMOS</caption>
 				  <tr>
 				    <th style="color:purple;">Tema</th>
-				    <th style="color:purple;">Fecha / Hora</th>
+				    <th style="color:purple;">Fecha</th>
+				    <th style="color:purple;">Hora</th>
 				  </tr>
 				  <tr>
 				    <td>Sesion General de medicos</td>
-				    <td><input type="datetime-local" name="bdaytime"></td>
+				    <td>10 - julio - 2017</td>
+				    <td>10:30 am</td>
 				  </tr>
 				  <tr>
 				    <td>Charlas para medicos pediatras</td>
-				    <td><input type="datetime-local" name="bdaytime"></td>
+				    <td>09 - julio - 2017</td>
+				    <td>09:00 am</td>
 				  </tr>
 				  <tr>
-				    <td>Curso de Ginecologia en la ciudad de Quito</td>
-				    <td id="c"><input type="datetime-local" name="bdaytime"></td>
+				    <td>Curso de Ginecologia </td>
+				    <td>28 - junio - 2017 </td>
+				    <td>08:00 am</td>
 				  </tr>
+				  </table>
+				  </center>
 				  </div>
-				</table>
-				</center>
-			</center>
-		</div>
 	</div>
 	<script type="text/javascript">
 		function activartab(idtab) {
